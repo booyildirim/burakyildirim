@@ -14,8 +14,8 @@ import HeaderLink from './HeaderLink.astro';
   header {
     margin: 0;
     padding: 0 1em;
-    background: white;
-    box-shadow: 0 2px 8px rgba(var(--black), 5%);
+    background-color: #9e9e98;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
   }
   h2 {
     margin: 0;
@@ -23,19 +23,22 @@ import HeaderLink from './HeaderLink.astro';
   }
   h2 a {
     text-decoration: none;
+    color: #1a1a18;
   }
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 680px;
+    margin: auto;
+    padding: 1em 0;
   }
   nav a {
-    padding: 1em 0.5em;
-    color: var(--black);
-    border-bottom: 4px solid transparent;
+    color: #1a1a18;
     text-decoration: none;
+    opacity: 0.7;
   }
-  nav a.active {
-    border-bottom-color: var(--accent);
+  nav a:hover, nav a.active {
+    opacity: 1;
   }
 </style>
